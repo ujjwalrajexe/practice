@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Help</a>
+      <span class="darkmode"
+        ><label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span class="darktext">Dark Mode</span>
+      </span>
+    </div>
+    <div class="body">
+      <div><img class="image" src="img.png" alt="" /></div>
+      <div class="form">
+        <h2>Log In to your account to continue shopping</h2>
+        <form action="#">
+          <div class="input">
+            Username or Email:<br />
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="example@gmail.com"
+            /><br />
+          </div>
+          <div class="input">
+            Password:<br />
+            <input type="password" name="" id="" /><br />
+          </div>
+          <div class="input">
+            <input type="checkbox" name="" id="" />Remember Me<br />
+          </div>
+          <div class="input">
+            <input
+              type="button"
+              class="btn"
+              id="loginbutton"
+              value="LOG IN"
+              onclick="login()"
+            /><br />
+          </div>
+          <div class="input">
+            <a href="#" id="forgot" onclick="forgotbutton()"
+              >Forgot Password?</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function login() {
+        alert("You have logged in");
+      }
+      function forgotbutton() {
+        alert("You have forgotten your password");
+      }
+
+    </script>
+  </body>
+</html>
